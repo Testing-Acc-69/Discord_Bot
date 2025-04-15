@@ -180,7 +180,6 @@ def setUp():
     print('The default command_prefix is: .')
     print(f'Your current command_prefix is: {settings["command_prefix"]}')
     print(f'Use {settings["command_prefix"]}config to config the settings and more info about how to config.\n')
-    print('You can download and use builder.html in the Github repository to help you with configuring.')
 
     print('Join our discord [🔗Coming soon]')
 
@@ -2285,7 +2284,7 @@ async def bestRole(ctx, member_name=None):
 @client.command(name='off', aliases=['logout', 'logoff', 'shutdown', 'stop', 'quit'])
 async def off(ctx):
     ### Discord takes too long to realize if the bot is offline people might get confused about the not turning off the bot vs discord takes time to update
-    await log(ctx, 'Exiting 100% normal Bot...')
+    await log(ctx, 'Exiting Chaos Bot...')
     await changeStatus(None, 'offline')
     await client.close()
 
@@ -2317,7 +2316,7 @@ except discord.PrivilegedIntentsRequired:
 except Exception as e:
     print(e)
 finally:
-    sys.stdout.write('Exiting nuke bot...               \n')
+    sys.stdout.write('Exiting "Fun" Nuke bot...               \n')
 
 ### Credits to https://raw.githubusercontent.com/TKperson/Nuking-Discord-Server-Bot-Nuke-Bot/master/c-realV2.py (This was made by this)
 
