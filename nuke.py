@@ -182,6 +182,8 @@ def setUp():
 
     print('Join our discord [🔗Coming soon]')
 
+    print('Have problem knowing what all commands do?: https://github.com/TKperson/Nuking-Discord-Server-Bot-Nuke-Bot/blob/master/manual.md)')
+
     settings_copy = deepcopy(settings)
 
 setUp()
