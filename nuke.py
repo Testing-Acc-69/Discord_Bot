@@ -177,8 +177,7 @@ def setUp():
             exit()
 
     print('\nTips:')
-    print('The default command_prefix is: .')
-    print(f'Your current command_prefix is: {settings["command_prefix"]}')
+    print(f'Your current Command_prefix is: {settings["command_prefix"]}')
     print(f'Use {settings["command_prefix"]}config to config the settings and more info about how to config.\n')
 
     print('Join our discord [🔗Coming soon]')
@@ -287,18 +286,18 @@ async def on_connect():
 async def on_ready():
     banner()
     print('/+========================================================')
-    print(f'| | {Fore.GREEN}Bot ready.')
-    print(f'| {Fore.MAGENTA}+ Logged in as')
+    print(f'| | {Fore.GREEN}Bot is Ready.')
+    print(f'| {Fore.MAGENTA}+ Logged in as:')
     print(f'| | {client.user.name}#{client.user.discriminator}')
-    print(f'| | {client.user.id}')
-    print(f'| {Fore.MAGENTA}+ Permission given to ')
+    print(f'| | Bots id: {client.user.id}')
+    print(f'| {Fore.MAGENTA}+ Permission to use cmds given to: ')
     for permission in settings['permissions']:
         print(f'| | {permission}')
     print(f'| {Fore.MAGENTA}+ Command prefix: ' + settings['command_prefix'])
     if is_selfbot:
         print(f'| {Fore.YELLOW}+ [Selfbot] This is a selfbot.')
     else:
-        print(f'| {Fore.YELLOW}+ https://discord.com/api/oauth2/authorize?client_id={client.user.id}&permissions={settings["bot_permission"]}&scope=bot')
+        print(f'| {Fore.YELLOW}+ Invite link: https://discord.com/api/oauth2/authorize?client_id={client.user.id}&permissions={settings["bot_permission"]}&scope=bot')
     print('| ~*************************************')
     print('\\+-----')
 
